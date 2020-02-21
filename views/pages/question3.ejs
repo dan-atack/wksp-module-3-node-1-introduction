@@ -13,8 +13,14 @@
             <%- include('../partials/questions/3') %>
             <div class='box answer'>
                 <h3>Answer</h3>
-                <!-- render answer here -->
-                
+                <img src='<%-wtf.imageUrl%>' alt="<%='Homer'%>"/>
+                <p><%= ("Name: " + wtf.name) %></p>
+                <p><%= "Born: " + wtf.dob %></p>
+                <p><%= `Profession: ${wtf.profession}` %></p>
+                <p><%= "Favourite Food: " + wtf.favoriteFood %></p>
+                <p><%= `Fave Beverage: ${wtf.favoriteBeverage}` %></p>
+                <a href='question2'>PREVIOUS</a>
+                <a href='question4'>NEXT</a>
             </div>
         </div>
     </div>
